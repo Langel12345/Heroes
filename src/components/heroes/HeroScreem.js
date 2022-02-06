@@ -2,6 +2,8 @@ import React, { useMemo } from 'react';
 import { useParams,Navigate,useNavigate } from 'react-router-dom';
 import { getHeroById } from '../../selectors/getHeroById';
 import './heroes.css';
+const heroesImages = require.context('../../assets/heroes',true);
+
 export const HeroScreem = () => {
 
   const {heroeId}=useParams();
@@ -19,12 +21,12 @@ export const HeroScreem = () => {
   }
   
   const { id,superhero,alter_ego,publisher,first_appearance,characters}=heroe
-  const imgPath=`/heroes/assets/${id}.jpg`;
+ 
 
   return (
     <div className="row mt-5">
        <div className="my-card ">
-         <img src={imgPath} alt={superhero}  className="animate__animated animate__fadeInLeft img img-responsive" />
+         <img src={heroesImages(`./${id}.jpg`) } alt={superhero}  className="animate__animated animate__fadeInLeft img img-responsive" />
        </div>
        <div className="col-8 animate__animated animate__fadeIn">
           <h3> {superhero} </h3>

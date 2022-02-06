@@ -1,0 +1,145 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <SearchScreen /> debe de mostar a Batman y el input con el valor del queryString  1`] = `
+Array [
+  <h1>
+    Search 
+  </h1>,
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <h4>
+        Search 
+      </h4>
+      <hr />
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          autoComplete="off"
+          className="form-control"
+          name="searchText"
+          onChange={[Function]}
+          placeholder="Search Heroe"
+          type="text"
+          value="batman"
+        />
+        <button
+          className="btn btn-outline-primary mt-3"
+          type="submit"
+        >
+          Search...
+        </button>
+      </form>
+    </div>
+    <div
+      className="col-7"
+    >
+      <h4>
+        Results
+      </h4>
+      <hr />
+      <a
+        className="my-card animate__animated animate__fadeIn"
+        href="/hero/dc-batman"
+        onClick={[Function]}
+      >
+        <img
+          alt="Batman"
+          className="img img-responsive"
+          src="/heroes/assets/dc-batman.jpg"
+        />
+        <div
+          className="profile-name"
+        >
+          Batman
+        </div>
+        <div
+          className="profile-position"
+        >
+          Bruce Wayne
+        </div>
+        <div
+          className="profile-overview"
+        >
+          <div
+            className="profile-overview"
+          >
+            <div
+              className="row"
+            >
+              <div
+                className="col-ms-4"
+              >
+                <h3>
+                  DC Comics
+                </h3>
+                <p>
+                  Primera aparición: 
+                  <br />
+                  Detective Comics #27
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Pruebas en <SearchScreen /> debe de mostrarse correctamente  1`] = `
+Array [
+  <h1>
+    Search 
+  </h1>,
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <h4>
+        Search 
+      </h4>
+      <hr />
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          autoComplete="off"
+          className="form-control"
+          name="searchText"
+          onChange={[Function]}
+          placeholder="Search Heroe"
+          type="text"
+          value=""
+        />
+        <button
+          className="btn btn-outline-primary mt-3"
+          type="submit"
+        >
+          Search...
+        </button>
+      </form>
+    </div>
+    <div
+      className="col-7"
+    >
+      <h4>
+        Results
+      </h4>
+      <hr />
+      <div
+        className="alert alert-info"
+      >
+        Search in Heroe
+      </div>
+    </div>
+  </div>,
+]
+`;
